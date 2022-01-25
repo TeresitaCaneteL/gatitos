@@ -1,161 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gatunos</title>
   <link rel="stylesheet" href="assets/css/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+
 <body>
 
 
   <!--navbar-->
 
-      <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./assets/img/gatunos.png" style="width: 300px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav topBotomBordersOut ">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Disabled</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+  <nav class="navbar navbar-expand-lg navbar-light fixed ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/gatunos.png" style="width: 300px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav topBotomBordersOut ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery1">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery2">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!--navbar-fin-->
-   <!--slider-->
-<div class="container slider">
-  <div class="row">
-    <div class="col-md-12">
+  <!--slider-->
+  <div class="container2 slider">
+    <div class="row">
+      <div class="col-md-12">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/slidergato4.jpg" class="d-block  img-fluid" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1 class="titu_slider">Conoce la historia de Conchita</h1>
-                  <h2 class="titu_slider">Rescatada hace un mes siendo revisada por nuestros veterinarios</h2>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/slidergato2.jpg" class="d-block w-100 img-fluid"  >
-                <div class="carousel-caption d-none d-md-block">
-                  <h1 class="titu_slider">Conoce la historia de Conchita</h1>
-                  <h2 class="titu_slider">Rescatada hace un mes siendo revisada por nuestros veterinarios</h2>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/slidergato3.jpg" class="d-block w-100 img-fluid" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h1 class="titu_slider">Conoce la historia de Conchita</h1>
-                  <h2 class="titu_slider">Rescatada hace un mes siendo revisada por nuestros veterinarios</h2>
-                </div>
-              </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/slidergato4.jpg" class="d-block  img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block testimonio">
+                <h1 class="">Conoce la historia de Conchita</h1>
+                <h2 class="">Rescatada hace un mes siendo revisada por nuestros veterinarios</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/slidergato2.jpg" class="d-block w-100 img-fluid">
+              <div class="carousel-caption d-none d-md-block testimonio">
+                <h1 class="">Conoce la historia de Conchita</h1>
+                <h2 class="">Rescatada hace un mes siendo revisada por nuestros veterinarios</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/slidergato3.jpg" class="d-block w-100 img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block testimonio">
+                <h1 class="">Conoce la historia de Conchita</h1>
+                <h2 class="">Rescatada hace un mes siendo revisada por nuestros veterinarios</h2>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </div>
   </div>
 
- <!--slider-fin-->
- <hr>
- <!--galery-->
+  <!--slider-fin-->
 
- </div>
+  <!--galery-->
 
- <!--galery2-->
- <div class="container mt-5">
-  <div align="center">
-      <button class="btn btn-default filter-button" data-filter="all">Todas</button>
-      <button class="btn btn-default filter-button" data-filter="hdpe">Reserva Nacional</button>
-      <button class="btn btn-default filter-button" data-filter="sprinkle">Termas</button>
-      <button class="btn btn-default filter-button" data-filter="spray">Volcán</button>
-      <button class="btn btn-default filter-button" data-filter="irrigation">Actividades</button>
-  </div>
-  <br/>
 
-</div>
+
+  <!--galery2-->
+
+  <div class=" container gallery" id="gallery1">
+    <h1 class="titulo">Elígeme</h1>
     <article>
-        <div class="item-wrapper  filter hdpe col-lg-4 col-md-4 col-sm-4 col-xs-6">
-          <figure>
-            <div class="image  " style="background-image:url(../assets/img/slidergato2.jpg);"></div>
-            <div class="lighting"></div>
-          </figure>
-          <div class="item-content">
-              <h1>Elígeme</h1>
-            <h3 class="titu_slider">Soy Conchita</h3>
-            <div class="author titu_slider">Tengo 3 meses</div>
-
-          </div>
-        </div>
-      </article>
-      <article>
-        <div class="item-wrapper  filter sprinkle col-lg-4 col-md-4 col-sm-4 col-xs-6 hdpe"id="sprinkle">
-          <figure>
-            <div class="image  " style="background-image:url(../assets/img/slidergato2.jpg);"></div>
-            <div class="lighting"></div>
-          </figure>
-          <div class="item-content">
-              <h1>Elígeme</h1>
-            <h3 class="titu_slider">Soy Conchita</h3>
-            <div class="author titu_slider">Tengo 3 meses</div>
-
-          </div>
-        </div>
-      </article>
-      <article>
-        <div class="item-wrapper filter sprinkle col-lg-4 col-md-4 col-sm-4 col-xs-6"id="sprinkle">
-          <figure>
-            <div class="image col-lg-4 col-md-4 col-sm-4 col-xs-6 " style="background-image:url(../assets/img/slidergato2.jpg);"></div>
-            <div class="lighting"></div>
+      <div class="item-wrapper ">
+        <figure class="container2">
+          <div class="image  " style="background-image:url(../assets/img/slidergato1.jpg)"></div>
+          <div class="lighting "></div>
         </figure>
-          <div class="item-content">
-              <h1>Elígeme</h1>
-            <h3 class="titu_slider">Soy Conchita</h3>
-            <div class="author titu_slider">Tengo 3 meses</div>
+        <div class="item-content">
+          <h1>Elígeme</h1>
+          <h3 class="titu_slider">Soy pepa</h3>
+          <div class="author titu_slider">Tengo 5 meses</div>
 
-          </div>
         </div>
-      </article>
-</div>
+      </div>
+    </article>
+    <article>
+      <div class="item-wrapper">
+        <figure class="container2">
+          <div class="image  " style="background-image:url(../assets/img/slidergato4.jpg)"></div>
+          <div class="lighting"></div>
+        </figure>
+        <div class="item-content">
+          <h1>Elígeme</h1>
+          <h3 class="titu_slider">Soy Lalo</h3>
+          <div class="author titu_slider">Tengo 6 meses</div>
 
- <!--galery2-fin-->
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="item-wrapper">
+        <figure class="container2">
+          <div class="image  " style="background-image:url(../assets/img/slidergato2.jpg)"></div>
+          <div class="lighting"></div>
+        </figure>
+        <div class="item-content">
+          <h1>Elígeme</h1>
+          <h3 class="titu_slider">Soy Conchita</h3>
+          <div class="author titu_slider">Tengo 3 meses</div>
 
-<script src="assets/js/scrip.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        </div>
+      </div>
+    </article>
+  </div>
+  <h1 class="titulo">Nuestros rescatados de la semana</h1>
+  <div class="container2" id="gallery2">
+
+    <div class="lightbox-gallery">
+      <div>
+        <img src="/assets/img/gato.png" data-image-hd="/assets/img/gato.png" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="500">
+      </div>
+      <div>
+        <img src="/assets/img/gato2.jpg" data-image-hd="/assets/img/gato2.jpg" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="400">
+      </div>
+      <div>
+        <img src="/assets/img/gato3.jpg" data-image-hd="/assets/img/gato3.jpg" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="400">
+      </div>
+      <div>
+        <img src="/assets/img/gatos-enfermedades.jpg" data-image-hd="/assets/img/gatos-enfermedades.jpg" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="400">
+      </div>
+      <div>
+        <img src="/assets/img/gato.png" data-image-hd="/assets/img/gato.png" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="500">
+      </div>
+      <div>
+        <img src="/assets/img/gato2.jpg" data-image-hd="/assets/img/gato2.jpg" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="400">
+      </div>
+      <div>
+        <img src="/assets/img/gato3.jpg" data-image-hd="/assets/img/gato3.jpg" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="400">
+      </div>
+      <div>
+        <img src="/assets/img/gatos-enfermedades.jpg" data-image-hd="/assets/img/gatos-enfermedades.jpg" alt="Gatitos rescatado el lunes aproximadamente 3 meses." height="300" width="400">
+      </div>
+
+
+    </div>
+  </div>
+
+<hr>
+<h1 class="titulo" id="contacto">Contactanos</h1>
+  <div class="container2">
+
+      <form role="form" id="basic-form" name="f1">
+       <div class="row">
+          <div class="col-md-4"></div>
+               <div class="col-md-6">
+                   <h2>Ingrese sus datos</h2>
+                   <div class="form-group">
+                       <label for="name">Rut:</label><br><span>(Ingrese rut sin puntos y con guion)</span>
+                       <input type="text" class="form-control"  placeholder="Ingrese rut" id="txt_rut" minlength="3" required>
+                       <p class="text-danger" id="msgerror"></p>
+                     </div>
+                     <div class="form-group">
+                         <label for="name">Nombre:</label>
+                         <input type="text" class="form-control" id="nombres" minlength="4" pattern="^[A-Za-z]+$" maxlength="35"  placeholder="Ingrese nombre" required>
+                       </div>
+                       <div class="form-group">
+                           <label for="name">Apellido:</label>
+                           <input type="text" class="form-control" id="apellido"minlength="4" pattern="^[A-Za-z]+$" maxlength="35"  placeholder="Ingrese apellido" required>
+                         </div>
+                         <div class="form-group">
+                             <label for="name">Correo:</label>
+                             <input type="Email" class="form-control" id="email" minlength="3" placeholder="Ingrese Correo" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="name">Direccion:</label>
+                               <input type="text" class="form-control" id="dir" minlength="4" pattern="^[A-Za-z]+$" maxlength="35"  placeholder="Ingrese Dirección" required>
+
+                             </div>
+                             <div class="form-group">
+                              <label for="telefono">Teléfono:</label>
+                              <input type="text" class="form-control" id="Telefono" minlength="8" pattern="[0-9]+" placeholder="Ingrese Telefono"required>
+
+                            </div>
+                             <div class="form-group">
+                                <label for="fecha">Fecha de nacimiento</label>
+                                <input type="date" class="form-control" id="fecha" max="2002-01-01" placeholder="Fecha de nacimiento" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="fecha">Región</label>
+                                  <select name="   " id="ciudad" onchange="cambia_ciudad()" class="form-control">
+                                      <option value="0">Seleccione...</option>
+                                    <option value="ARICA Y PARINACOTA">ARICA</option>
+                                    <option value="TARAPACÁ">TARAPACA</option>
+                                    <option value="ANTOFAGASTA">ANTOFAGASTA</option>
+                                    <option value="ATACAMA">ATACAMA</option>
+                                    <option value="COQUIMBO">COQUIMBO</option>
+                                    <option value="VALPARAÍSO">VALPARAÍSO</option>
+                                    <option value="METROPOLITANA">SANTIAGO</option>
+                                    <option value="LIBERTADORBO">LIBERTADOR BERNARDO O'HIGGINS</option>
+                                    <option value="MAULE">REGION DEL MAULE</option>
+                                    <option value="NUBLE">REGION DE ÑUBLE</option>
+                                    <option value="BIOBIO">REGION DE BIOBÍO</option>
+                                    <option value="ARAUCANIA">REGION DE LA ARAUCANÍA</option>
+                                    <option value="RIOS">REGIÓN DE LOS RÍOS</option>
+                                    <option value="LAGOS">REGIÓN DE LOS LAGOS</option>
+                                    <option value="AYSEN">AYSEN Y GRAL. CARLOS I.DEL CAMPO</option>
+                                    <option value="MAGA">MAGALLANES Y LA ANTARTICA CHILENA</option>
+                                   </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fecha">Ciudad</label>
+                                    <select name=" " id="cdades" class="form-control">
+                                        <option value="0">Seleccione..</option>
+                                   </select>
+                                  </div>
+                                  <p class="text-warning">*Debe completar todos los campos para enviar</p>
+                                  <button  class="botton"id="enviar" onclick="validar2()">Enviar</button>
+
+                         </div>
+               </div>
+
+
+         </form>
+        </div>
+
+
+
+    <footer class="foo">
+      <div class=" row">
+          <div class="col-md-4 rt">
+              <ul>
+                  <li><a href="#">Conócenos</a></li>
+                  <li><a href="#">Ingresa</a></li>
+                  <li><a href="#">Fono:+569-93456667</a></li>
+                  <li><a href="#">Trabaja con nosotros</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 logos">
+              <ul>
+                  <li><a href="http://facebook.com/"><img class="ico" src="/assets/img/logo_face.png" /></a></li>
+                  <li><a href="http://instagram.com/"><img class="ico" src="/assets/img/logo_intagram.png" /></a></li>
+                  <li><a href="http://twiter.com/"><img class="ico" src="/assets/img/logo_twiter.png" /></a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 ">
+              <img class="img_log_vv" src="/assets/img/gatunos.png" />
+          </div>
+      </div>
+  </footer>
+
+
+
+  <script>
+    (function () {
+      var $lightbox = $("<div class='lightbox'></div>");
+      var $img = $("<img>");
+      var $caption = $("<p class='caption'></p>");
+      $lightbox
+        .append($img)
+        .append($caption);
+
+      $('body').append($lightbox);
+
+      $('.lightbox-gallery img').click(function (e) {
+        e.preventDefault();
+
+        var src = $(this).attr("data-image-hd");
+        var cap = $(this).attr("alt");
+        $img.attr('src', src);
+        $caption.text(cap);
+        $lightbox.fadeIn('slow');
+
+        $lightbox.click(function () {
+          $lightbox.fadeOut('slow');
+        });
+      });
+
+    }());
+
+
+
+  </script>
+
+  <script src="assets/js/scrip.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
