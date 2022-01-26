@@ -535,3 +535,6 @@ h2, span, label{
 h6{
   color: #fff!important;
 }
+label, h2, span{
+  color: #fff!important;
+}
