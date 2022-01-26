@@ -359,3 +359,7 @@ h2, span, label{
   color: #fff;
   font-size:1.5rem;
 }
+.image{
+  width:90%!important;
+  height:auto!important;
+}
